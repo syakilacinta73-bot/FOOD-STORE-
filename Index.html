@@ -1,0 +1,88 @@
+<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD-STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍔 FOOD-STORE</h1>
+    <p>Selamat Datang di Toko Makanan Kami!</p>
+</header>
+
+<nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#menu">Menu</a>
+    <a href="#keranjang">Keranjang</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="beranda" class="hero">
+    <h2>Selamat Datang di FOOD-STORE</h2>
+    <p>Makanan enak, harga bersahabat!</p>
+    <a href="#menu" class="tombol">Lihat Menu</a>
+</section>
+
+<section id="menu">
+    <h2>Daftar Menu Makanan</h2>
+
+    <div class="produk">
+        <h3>🍔 Burger Spesial</h3>
+        <p>Rp20.000</p>
+        <button onclick="tambah('Burger Spesial',20000)">Tambah</button>
+    </div>
+
+    <div class="produk">
+        <h3>🍕 Pizza Keju</h3>
+        <p>Rp45.000</p>
+        <button onclick="tambah('Pizza Keju',45000)">Tambah</button>
+    </div>
+
+    <div class="produk">
+        <h3>🍛 Nasi Goreng</h3>
+        <p>Rp15.000</p>
+        <button onclick="tambah('Nasi Goreng',15000)">Tambah</button>
+    </div>
+
+    <div class="produk">
+        <h3>🍜 Mie Ayam</h3>
+        <p>Rp12.000</p>
+        <button onclick="tambah('Mie Ayam',12000)">Tambah</button>
+    </div>
+
+    <div class="produk">
+        <h3>🍩 Donat Cokelat</h3>
+        <p>Rp8.000</p>
+        <button onclick="tambah('Donat Cokelat',8000)">Tambah</button>
+    </div>
+
+    <div class="produk">
+        <h3>🥤 Es Minuman</h3>
+        <p>Rp10.000</p>
+        <button onclick="tambah('Es Minuman',10000)">Tambah</button>
+    </div>
+</section>
+
+<section id="keranjang">
+    <h2>🛒 Keranjang Belanja</h2>
+    <ul id="daftar"></ul>
+    <h3>Total: Rp<span id="total">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+<section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>FOOD-STORE menyediakan makanan lezat dan berkualitas.</p>
+</section>
+
+<footer>
+    <p>© 2026 FOOD-STORE. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
